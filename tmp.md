@@ -1,5 +1,16 @@
+<article class="markdown-body">
+<style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+</style>
+
 # [Back to Home](index.html)
-##The important thing in life is to
+## The important thing in life is to
 - have a great aim
 - and the determination to ***attain*** it
 
@@ -27,3 +38,22 @@ int main()
     return 0;
 }
 ```
+
+``` c
+remove_list_entry(entry)
+{
+    // The "indirect" pointer points to the 
+    // *address* of the thing we'll update
+    indirect = &head;
+
+    // Walk the list, looking for the thing that 
+    // points to the entry we want to remove_list_entry
+    while((*indirect) != entry)
+        indirect = &(*indirect)->next;
+
+    // .. and just remove it
+    *indirect = entry->next;
+}
+```
+
+</article>

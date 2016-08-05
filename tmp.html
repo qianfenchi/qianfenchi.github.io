@@ -46,6 +46,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+<article class="markdown-body">
+<style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+</style>
 <h1 id="back-to-home"><a href="index.html">Back to Home</a></h1>
 <h2 id="the-important-thing-in-life-is-to">The important thing in life is to</h2>
 <ul>
@@ -53,6 +63,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>and the determination to <strong><em>attain</em></strong> it</li>
 </ul>
 <p><br /><span class="math display"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span><br /></p>
+<p><a href="https://mzl.la/29N6lLx">🏣🏂🐙🐙💥 ⏰💥😓🐙💾👬</a></p>
 <blockquote>
 <p>空山新雨后，<br />
 天气晚来秋。<br />
@@ -72,5 +83,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     
     <span class="kw">return</span> <span class="dv">0</span>;
 }</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">remove_list_entry(entry)
+{
+    <span class="co">// The &quot;indirect&quot; pointer points to the </span>
+    <span class="co">// *address* of the thing we&#39;ll update</span>
+    indirect = &amp;head;
+
+    <span class="co">// Walk the list, looking for the thing that </span>
+    <span class="co">// points to the entry we want to remove_list_entry</span>
+    <span class="kw">while</span>((*indirect) != entry)
+        indirect = &amp;(*indirect)-&gt;next;
+
+    <span class="co">// .. and just remove it</span>
+    *indirect = entry-&gt;next;
+}</code></pre></div>
+</article>
 </body>
 </html>
