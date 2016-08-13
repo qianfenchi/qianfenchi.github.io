@@ -9,6 +9,6 @@
     }
 </style>
 
-# [tmp](tmp.html)
+# [just a test page](tmp.html) 
 
 </article>
